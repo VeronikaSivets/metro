@@ -34,7 +34,6 @@ class SettingsTableSeeder extends Seeder {
 	$disease2 = new Disease;
 	$disease2->title = 'Dis 2';
 	$disease2->description = 'Descr 2';
-
 	$setting1->diseases()->save($disease2);
 
 	$setting2 = Setting::create(['title' => 'test2', 'img' => '/images/2.png']);
